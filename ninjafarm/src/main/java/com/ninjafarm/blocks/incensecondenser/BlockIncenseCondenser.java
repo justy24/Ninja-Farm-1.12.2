@@ -36,18 +36,18 @@ public class BlockIncenseCondenser extends BlockBase {
 
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return Item.getItemFromBlock(ModBlocks.FUSION_ALTAR);
+        return Item.getItemFromBlock(ModBlocks.INCENSE_CONDENSER);
     }
 
     @Override
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
-        return new ItemStack(ModBlocks.FUSION_ALTAR);
+        return new ItemStack(ModBlocks.INCENSE_CONDENSER);
     }
 
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         if (!worldIn.isRemote) {
-            playerIn.openGui(Main.instance, Reference.GUI_FUSION_ALTAR, worldIn, pos.getX(), pos.getY(), pos.getZ());
+            playerIn.openGui(Main.instance, Reference.GUI_INCENSE_CONDENSER, worldIn, pos.getX(), pos.getY(), pos.getZ());
         }
 
         return true;
@@ -73,9 +73,6 @@ public class BlockIncenseCondenser extends BlockBase {
     public static void setState(boolean active, World worldIn, BlockPos pos) {
         IBlockState state = worldIn.getBlockState(pos);
         TileEntity tileentity = worldIn.getTileEntity(pos);
-
-        //if(active) worldIn.setBlockState(pos, BlockInit.FUSION_ALTAR.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, true), 3);
-        //else worldIn.setBlockState(pos, BlockInit.FUSION_ALTAR.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, false), 3);
 
         if (tileentity != null) {
             tileentity.validate();

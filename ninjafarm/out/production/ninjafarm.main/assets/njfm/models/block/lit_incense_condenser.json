@@ -1,0 +1,12 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "particle": "njfm:blocks/incense_condenser_front_off",
+    "up": "njfm:blocks/incense_condenser_front_off",
+    "down": "njfm:blocks/incense_condenser_front_off",
+    "north": "njfm:blocks/incense_condenser_front_on",
+    "east": "njfm:blocks/incense_condenser_side1",
+    "south": "njfm:blocks/incense_condenser_side3",
+    "west": "njfm:blocks/incense_condenser_side2"
+  }
+}

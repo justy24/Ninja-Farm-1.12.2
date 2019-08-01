@@ -1,0 +1,12 @@
+{
+  "variants": {
+      "burning=false,facing=north": { "model": "njfm:incense_condenser" },
+      "burning=false,facing=east": { "model": "njfm:incense_condenser", "y": 90 },
+      "burning=false,facing=south": { "model": "njfm:incense_condenser", "y": 180 },
+      "burning=false,facing=west": { "model": "njfm:incense_condenser", "y": 270 },
+      "burning=true,facing=north": { "model": "njfm:incense_condenser" },
+      "burning=true,facing=east": { "model": "njfm:incense_condenser", "y": 90 },
+      "burning=true,facing=south": { "model": "njfm:incense_condenser", "y": 180 },
+      "burning=true,facing=west": { "model": "njfm:incense_condenser", "y": 270 }
+  }
+}

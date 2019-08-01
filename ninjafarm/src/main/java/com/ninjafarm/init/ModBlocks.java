@@ -4,6 +4,7 @@ import com.ninjafarm.blocks.BlockBase;
 import com.ninjafarm.blocks.fusionaltar.BlockFusionAltar;
 import com.ninjafarm.blocks.crops.BlockRicePlant;
 import com.antibed.blocks.fluids.BlockFluidBase;
+import com.ninjafarm.blocks.incensecondenser.BlockIncenseCondenser;
 import com.ninjafarm.blocks.iwiOre;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -24,6 +25,7 @@ public class ModBlocks {
 
     //custom crafting
     public static final Block FUSION_ALTAR = new BlockFusionAltar("fusion_altar");
+    public static final Block INCENSE_CONDENSER = new BlockIncenseCondenser("incense_condenser");
 
     //multiblocks
 

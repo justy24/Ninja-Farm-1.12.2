@@ -7,7 +7,7 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
 
 public class GuiIncenseCondenser extends GuiContainer {
-    private static final ResourceLocation TEXTURES = new ResourceLocation(Reference.MOD_ID + ":textures/gui/fusion_altar.png");
+    private static final ResourceLocation TEXTURES = new ResourceLocation(Reference.MOD_ID + ":textures/gui/incense_condenser.png");
     private final InventoryPlayer player;
     private final TileEntityIncenseCondenser tileentity;
 
@@ -36,13 +36,12 @@ public class GuiIncenseCondenser extends GuiContainer {
         if(TileEntityIncenseCondenser.isBurning(tileentity))
         {
             int k = this.getBurnLeftScaled(13);
-            this.drawTexturedModalRect(this.guiLeft + 82, this.guiTop + 62 + 12 - k, 176, 12 - k, 14, k + 1);
+            this.drawTexturedModalRect(this.guiLeft + 117, this.guiTop + 50 - k, 176, 12 - k, 14, k + 1);
         }
 
         int l = this.getCookProgressScaled(24);
         if(tileentity.isInputEmpty()) l = 0;
-        this.drawTexturedModalRect(this.guiLeft + 55, this.guiTop + 15, 176, 14, l + 1, 16);
-        this.drawTexturedModalRect(this.guiLeft + 99, this.guiTop + 15, 176, 32, 23 - l, 16);
+        this.drawTexturedModalRect(this.guiLeft + 55, this.guiTop + 31, 176, 14, l + 1, 16);
     }
 
     private int getBurnLeftScaled(int pixels)

@@ -22,18 +22,18 @@ public class IncenseCondenserRecipes {
 
     private IncenseCondenserRecipes()
     {
-        addFusionRecipe(new ItemStack(Blocks.IRON_ORE), new ItemStack(Blocks.GOLD_ORE), new ItemStack(ModBlocks.IWI_ORE), 5.0F);
+        addIncenseRecipe(new ItemStack(Blocks.IRON_ORE), new ItemStack(Blocks.GOLD_ORE), new ItemStack(ModBlocks.IWI_ORE), 5.0F);
     }
 
 
-    public void addFusionRecipe(ItemStack input1, ItemStack input2, ItemStack result, float experience)
+    public void addIncenseRecipe(ItemStack input1, ItemStack input2, ItemStack result, float experience)
     {
-        if(getFusionResult(input1, input2) != ItemStack.EMPTY) return;
+        if(getIncenseResult(input1, input2) != ItemStack.EMPTY) return;
         this.smeltingList.put(input1, input2, result);
         this.experienceList.put(result, Float.valueOf(experience));
     }
 
-    public ItemStack getFusionResult(ItemStack input1, ItemStack input2)
+    public ItemStack getIncenseResult(ItemStack input1, ItemStack input2)
     {
         for(Entry<ItemStack, Map<ItemStack, ItemStack>> entry : this.smeltingList.columnMap().entrySet())
         {
@@ -61,7 +61,7 @@ public class IncenseCondenserRecipes {
         return this.smeltingList;
     }
 
-    public float getFusionExperience(ItemStack stack)
+    public float getIncenseExperience(ItemStack stack)
     {
         for (Entry<ItemStack, Float> entry : this.experienceList.entrySet())
         {

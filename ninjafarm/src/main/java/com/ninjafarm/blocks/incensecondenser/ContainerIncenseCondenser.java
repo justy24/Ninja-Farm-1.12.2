@@ -23,10 +23,10 @@ public class ContainerIncenseCondenser extends Container {
         this.tileentity = tileentity;
         IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 
-        this.addSlotToContainer(new SlotItemHandler(handler, 0, 26 + 11, 15));
-        this.addSlotToContainer(new SlotItemHandler(handler, 1, 136 - 11, 15));
-        this.addSlotToContainer(new SlotItemHandler(handler, 2, 81, 42));
-        this.addSlotToContainer(new SlotItemHandler(handler, 3, 81, 15));
+        this.addSlotToContainer(new SlotItemHandler(handler, 0, 18, 31)); //slot1
+        this.addSlotToContainer(new SlotItemHandler(handler, 1, 37, 31)); //slot2
+        this.addSlotToContainer(new SlotItemHandler(handler, 2, 81, 31)); //fuel
+        this.addSlotToContainer(new SlotItemHandler(handler, 3, 116, 31)); //output
 
         for(int y = 0; y < 3; y++)
         {
@@ -98,7 +98,7 @@ public class ContainerIncenseCondenser extends Container {
             {
                 Slot slot1 = (Slot)this.inventorySlots.get(index + 1);
 
-                if(!IncenseCondenserRecipes.getInstance().getFusionResult(stack1, slot1.getStack()).isEmpty())
+                if(!IncenseCondenserRecipes.getInstance().getIncenseResult(stack1, slot1.getStack()).isEmpty())
                 {
                     if(!this.mergeItemStack(stack1, 0, 2, false))
                     {

@@ -25,10 +25,10 @@ public class ContainerFusionAltar extends Container {
         this.tileentity = tileentity;
         IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 
-        this.addSlotToContainer(new SlotItemHandler(handler, 0, 26 + 11, 15));
-        this.addSlotToContainer(new SlotItemHandler(handler, 1, 136 - 11, 15));
-        this.addSlotToContainer(new SlotItemHandler(handler, 2, 81, 42));
-        this.addSlotToContainer(new SlotItemHandler(handler, 3, 81, 15));
+        this.addSlotToContainer(new SlotItemHandler(handler, 0, 26 + 11, 19));
+        this.addSlotToContainer(new SlotItemHandler(handler, 1, 136 - 11, 19));
+        this.addSlotToContainer(new SlotItemHandler(handler, 2, 81, 46));
+        this.addSlotToContainer(new SlotItemHandler(handler, 3, 81, 19));
 
         for(int y = 0; y < 3; y++)
         {

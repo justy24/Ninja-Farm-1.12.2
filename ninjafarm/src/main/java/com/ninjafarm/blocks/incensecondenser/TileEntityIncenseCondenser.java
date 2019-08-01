@@ -63,7 +63,7 @@ public class TileEntityIncenseCondenser extends TileEntity implements ITickable
 
     @Override
     public ITextComponent getDisplayName() {
-        return this.hasCustomName() ? new TextComponentString(this.customName) : new TextComponentTranslation("container.fusion_altar");
+        return this.hasCustomName() ? new TextComponentString(this.customName) : new TextComponentTranslation("container.incense_condenser");
     }
 
     @Override
@@ -146,7 +146,7 @@ public class TileEntityIncenseCondenser extends TileEntity implements ITickable
         }
         else {
             if(this.canSmelt() && this.isBurning()) {
-                ItemStack output = IncenseCondenserRecipes.getInstance().getFusionResult(inputs[0], inputs[1]);
+                ItemStack output = IncenseCondenserRecipes.getInstance().getIncenseResult(inputs[0], inputs[1]);
                 if(!output.isEmpty()) {
                     smelting = output;
                     cookTime++;
@@ -162,7 +162,7 @@ public class TileEntityIncenseCondenser extends TileEntity implements ITickable
     private boolean canSmelt() {
         if(((ItemStack)this.handler.getStackInSlot(0)).isEmpty() || ((ItemStack)this.handler.getStackInSlot(1)).isEmpty()) return false;
         else {
-            ItemStack result = IncenseCondenserRecipes.getInstance().getFusionResult((ItemStack)this.handler.getStackInSlot(0), (ItemStack)this.handler.getStackInSlot(1));
+            ItemStack result = IncenseCondenserRecipes.getInstance().getIncenseResult((ItemStack)this.handler.getStackInSlot(0), (ItemStack)this.handler.getStackInSlot(1));
             if(result.isEmpty()) return false;
             else {
                 ItemStack output = (ItemStack)this.handler.getStackInSlot(3);
