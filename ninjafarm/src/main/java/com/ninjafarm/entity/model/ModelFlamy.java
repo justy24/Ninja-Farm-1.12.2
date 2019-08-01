@@ -3,6 +3,7 @@ package com.ninjafarm.entity.model;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.math.MathHelper;
 
 /**
  * ModelFlamy - justy24
@@ -58,5 +59,17 @@ public class ModelFlamy extends ModelBase {
         modelRenderer.rotateAngleX = x;
         modelRenderer.rotateAngleY = y;
         modelRenderer.rotateAngleZ = z;
+    }
+
+    @Override
+    public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn) {
+        this.LeftLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 0.9F * limbSwingAmount;
+        this.RightLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.9F * limbSwingAmount;
+
+        this.LeftArm.rotateAngleX = MathHelper.cos(limbSwing * 0.6F) * 0.9F * MathHelper.abs(limbSwingAmount);
+        this.RightArm.rotateAngleX = MathHelper.cos(limbSwing * 0.6F + (float)Math.PI) * 0.9F * MathHelper.abs(limbSwingAmount);
+
+        this.Head.rotateAngleY = netHeadYaw * 0.017453292F;
+        this.Head.rotateAngleX = headPitch * 0.017453292F;
     }
 }

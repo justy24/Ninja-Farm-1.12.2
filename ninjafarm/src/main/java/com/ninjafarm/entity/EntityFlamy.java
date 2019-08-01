@@ -24,7 +24,7 @@ public class EntityFlamy extends EntityCow
 {
     public EntityFlamy(World worldIn) {
         super(worldIn);
-        this.setSize(0.9F, 2.8F);
+        this.setSize(0.6F, 1.95F);
     }
 
     @Override
@@ -42,8 +42,12 @@ public class EntityFlamy extends EntityCow
     @Override
     protected void applyEntityAttributes() {
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(40.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.25D);
+        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(20.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.2D);
+        /*this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(2.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_SPEED).setBaseValue(4.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).setBaseValue(0.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0.0D);*/
     }
 
     @Override
