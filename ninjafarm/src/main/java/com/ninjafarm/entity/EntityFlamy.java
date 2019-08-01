@@ -20,17 +20,15 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 
-public class EntityCentaur extends EntityCow
+public class EntityFlamy extends EntityCow
 {
-    public EntityCentaur(World worldIn)
-    {
+    public EntityFlamy(World worldIn) {
         super(worldIn);
         this.setSize(0.9F, 2.8F);
     }
 
     @Override
-    protected void initEntityAI()
-    {
+    protected void initEntityAI() {
         this.tasks.addTask(0, new EntityAISwimming(this));
         this.tasks.addTask(1, new EntityAIPanic(this, 2.0D));
         this.tasks.addTask(2, new EntityAIMate(this, 1.0D));
@@ -42,46 +40,39 @@ public class EntityCentaur extends EntityCow
     }
 
     @Override
-    protected void applyEntityAttributes()
-    {
+    protected void applyEntityAttributes() {
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(40.0D);
         this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.25D);
     }
 
     @Override
-    public float getEyeHeight()
-    {
-        return 2.6F;
+    public float getEyeHeight() {
+        return 1.74F;
     }
 
     @Override
-    public EntityCow createChild(EntityAgeable ageable)
-    {
-        return new EntityCentaur(world);
+    public EntityCow createChild(EntityAgeable ageable) {
+        return new EntityFlamy(world);
     }
 
     @Override
-    protected ResourceLocation getLootTable()
-    {
-        return LootTableHandler.CENTAUR;
+    protected ResourceLocation getLootTable() {
+        return LootTableHandler.FLAMY;
     }
 
     @Override
-    protected SoundEvent getAmbientSound()
-    {
-        return SoundsHandler.ENTITY_CENTAUR_AMBIENT;
+    protected SoundEvent getAmbientSound() {
+        return SoundsHandler.ENTITY_FLAMY_AMBIENT;
     }
 
     @Override
-    protected SoundEvent getHurtSound(DamageSource source)
-    {
-        return SoundsHandler.ENTITY_CENTAUR_HURT;
+    protected SoundEvent getHurtSound(DamageSource source) {
+        return SoundsHandler.ENTITY_FLAMY_HURT;
     }
 
     @Override
-    protected SoundEvent getDeathSound()
-    {
-        return SoundsHandler.ENTITY_CENTAUR_DEATH;
+    protected SoundEvent getDeathSound() {
+        return SoundsHandler.ENTITY_FLAMY_DEATH;
     }
 }

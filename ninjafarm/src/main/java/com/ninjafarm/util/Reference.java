@@ -10,5 +10,5 @@ public class Reference {
     public static final String COMMON_PROXY_CLASS = "com.ninjafarm.proxy.CommonProxy";
     public static final int GUI_FUSION_ALTAR = 0;
 
-    public static final int ENTITY_ANIME_GIRL = 120;
+    public static final int ENTITY_FLAMY = 120;
 }

@@ -8,7 +8,7 @@ import net.minecraft.entity.Entity;
  * ModelFlamy - justy24
  * Created using Tabula 7.0.1
  */
-public class ModelCentaur extends ModelBase {
+public class ModelFlamy extends ModelBase {
     public ModelRenderer RightArm;
     public ModelRenderer RightLeg;
     public ModelRenderer Body;
@@ -16,7 +16,7 @@ public class ModelCentaur extends ModelBase {
     public ModelRenderer LeftLeg;
     public ModelRenderer Head;
 
-    public ModelCentaur() {
+    public ModelFlamy() {
         this.textureWidth = 64;
         this.textureHeight = 32;
         this.Head = new ModelRenderer(this, 32, 0);

@@ -7,13 +7,13 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class SoundsHandler
 {
-    public static SoundEvent ENTITY_CENTAUR_AMBIENT, ENTITY_CENTAUR_HURT, ENTITY_CENTAUR_DEATH;
+    public static SoundEvent ENTITY_FLAMY_AMBIENT, ENTITY_FLAMY_HURT, ENTITY_FLAMY_DEATH;
 
     public static void registerSounds()
     {
-        ENTITY_CENTAUR_AMBIENT = registerSound("entity.centaur.ambient");
-        ENTITY_CENTAUR_HURT = registerSound("entity.centaur.hurt");
-        ENTITY_CENTAUR_DEATH = registerSound("entity.centaur.death");
+        ENTITY_FLAMY_AMBIENT = registerSound("entity.flamy.ambient");
+        ENTITY_FLAMY_HURT = registerSound("entity.flamy.hurt");
+        ENTITY_FLAMY_DEATH = registerSound("entity.flamy.death");
     }
 
     private static SoundEvent registerSound(String name)
