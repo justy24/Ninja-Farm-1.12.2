@@ -1,6 +1,5 @@
-
-ninjafarm/\.DS_Store
-
 ninjafarm/\.idea/
-
+\.DS_Store
 ninjafarm/run/
+ninjafarm/build/
+ninjafarm/.gradle/
