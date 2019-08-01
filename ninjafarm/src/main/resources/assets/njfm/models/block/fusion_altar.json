@@ -1,0 +1,12 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "particle": "njfm:blocks/fusion_altar_front_off",
+    "up": "njfm:blocks/fusion_altar_front_off",
+    "down": "njfm:blocks/fusion_altar_front_off",
+    "north": "njfm:blocks/fusion_altar_front_off",
+    "east": "njfm:blocks/fusion_altar_side1",
+    "south": "njfm:blocks/fusion_altar_side3",
+    "west": "njfm:blocks/fusion_altar_side2"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " T ",
+    " T ",
+    " S "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "ab:thicc_thighs"
+    },
+    "S":
+    {
+     "item": "minecraft:stick"
+    }
+
+  },
+
+  "result":
+  {
+    "item": "ab:thigh_sword",
+    "count": 1
+  }
+}

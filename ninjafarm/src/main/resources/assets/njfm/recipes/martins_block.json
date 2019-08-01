@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "LGL",
+    "GGG",
+    "LGL"
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "minecraft:lapis_block"
+    },
+    "G":
+    {
+      "item": "minecraft:gold_block"
+    }
+  },
+
+  "result":
+  {
+    "item": "ab:martins_block",
+    "count": 4
+  }
+}

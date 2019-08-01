@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "ab:blocks/rice_plant4"
+  }
+}

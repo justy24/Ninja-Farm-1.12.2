@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "OOO",
+    "O O",
+    "OOO"
+  ],
+
+  "key":
+  {
+    "O":
+    {
+      "item": "ab:owo"
+    }
+  },
+
+  "result":
+  {
+    "item": "ab:uwu",
+    "count": 1
+  }
+}

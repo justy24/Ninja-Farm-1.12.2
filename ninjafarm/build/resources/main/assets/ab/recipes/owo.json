@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "AAA",
+    "A A",
+    "AAA"
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "ab:awa"
+    }
+  },
+
+  "result":
+  {
+    "item": "ab:owo",
+    "count": 1
+  }
+}

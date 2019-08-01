@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "TTT",
+    "T T"
+  ],
+  "key": {
+    "T": {
+      "item": "ab:thicc_thighs"
+    }
+  },
+  "result": {
+    "item": "ab:thigh_helmet",
+    "count": 1
+  }
+}
