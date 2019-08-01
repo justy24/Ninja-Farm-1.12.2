@@ -1,5 +1,6 @@
-antibed/\.idea/
-\.DS_Store
-antibed/run/
-antibed/build/
-antibed/.gradle/
+
+ninjafarm/\.DS_Store
+
+ninjafarm/\.idea/
+
+ninjafarm/run/
