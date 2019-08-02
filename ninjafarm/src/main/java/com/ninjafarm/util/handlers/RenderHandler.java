@@ -1,7 +1,7 @@
 package com.ninjafarm.util.handlers;
 
-import com.ninjafarm.entity.EntityFlamy;
-import com.ninjafarm.entity.render.RenderFlamy;
+import com.ninjafarm.entity.flamy.EntityFlamy;
+import com.ninjafarm.entity.flamy.RenderFlamy;
 import com.ninjafarm.init.ModFluids;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;

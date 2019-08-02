@@ -22,7 +22,7 @@ public class IncenseCondenserRecipes {
 
     private IncenseCondenserRecipes()
     {
-        addIncenseRecipe(new ItemStack(Blocks.IRON_ORE), new ItemStack(Blocks.GOLD_ORE), new ItemStack(ModBlocks.IWI_ORE), 5.0F);
+        addIncenseRecipe(new ItemStack(Blocks.IRON_ORE), new ItemStack(Blocks.GOLD_ORE), new ItemStack(ModBlocks.RICE_PLANT), 5.0F);
     }
 
 

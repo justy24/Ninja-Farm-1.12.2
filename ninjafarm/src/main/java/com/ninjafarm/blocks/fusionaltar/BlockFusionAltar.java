@@ -73,7 +73,6 @@ public class BlockFusionAltar extends BlockBase {
     public static void setState(boolean active, World worldIn, BlockPos pos) {
         IBlockState state = worldIn.getBlockState(pos);
         TileEntity tileentity = worldIn.getTileEntity(pos);
-
         //if(active) worldIn.setBlockState(pos, BlockInit.FUSION_ALTAR.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, true), 3);
         //else worldIn.setBlockState(pos, BlockInit.FUSION_ALTAR.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, false), 3);
 

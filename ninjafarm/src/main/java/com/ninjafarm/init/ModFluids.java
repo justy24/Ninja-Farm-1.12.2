@@ -17,15 +17,10 @@ import net.minecraftforge.fluids.FluidRegistry;
 import java.awt.*;
 
 public class ModFluids {
-    public static final Fluid FAKE_WATER = new FluidBase("fake_water", new ResourceLocation("ab:blocks/fake_water_still"), new ResourceLocation("ab:blocks/fake_water_flow"), new ResourceLocation("ab:blocks/fake_water_overlay"), Color.YELLOW, 0, 1000, 300, 1000);
-    public static final Fluid FAKE_MILK = new FluidBase("fake_milk", new ResourceLocation("ab:blocks/fake_milk_still"), new ResourceLocation("ab:blocks/fake_milk_flow"), new ResourceLocation("ab:blocks/fake_milk_overlay"), Color.WHITE, 0, 1000, 300, 1000);
-    public static final Fluid FAKE_TEARS = new FluidBase("fake_tears", new ResourceLocation("ab:blocks/fake_tears_still"), new ResourceLocation("ab:blocks/fake_tears_flow"), new ResourceLocation("ab:blocks/fake_tears_overlay"), Color.CYAN, 0, 1000, 300, 1000);
 
 
     public static void registerFluids() {
-        registerFluid(FAKE_WATER);
-        registerFluid(FAKE_MILK);
-        registerFluid(FAKE_TEARS);
+
     }
 
     public static void registerFluid(Fluid fluid) {
@@ -34,9 +29,7 @@ public class ModFluids {
     }
 
     public static void renderFluids() {
-        renderFluid(ModBlocks.FAKE_WATER_BLOCK, FAKE_WATER);
-        renderFluid(ModBlocks.FAKE_MILK_BLOCK, FAKE_MILK);
-        renderFluid(ModBlocks.FAKE_TEARS_BLOCK, FAKE_TEARS);
+
     }
 
     public static void renderFluid(Block block, Fluid fluid) {

@@ -1,7 +1,7 @@
 package com.ninjafarm.init;
 
 import com.Main;
-import com.ninjafarm.entity.EntityFlamy;
+import com.ninjafarm.entity.flamy.EntityFlamy;
 import com.ninjafarm.util.Reference;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;

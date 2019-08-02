@@ -1,26 +1,4 @@
 //items
-item.antibed.name=Antibed
-item.maxs_tool.name=Max's Tool
-item.justins_tool.name=Justin's Tool
-item.martins_tool.name=Martin's Tool
-item.uwu.name=uwu
-item.owo.name=owo
-item.awa.name=awa
-item.ewe.name=ewe
-item.iwi.name=iwi
-item.uwu_helmet.name=uwu Helmet
-item.uwu_chestplate.name=uwu Chestplate
-item.uwu_leggings.name=uwu Leggings
-item.uwu_boots.name=uwu Boots
-item.uwu_sword.name=uwu Sword
-item.thigh_helmet.name=Thigh Helmet
-item.thigh_chestplate.name=Thigh Chestplate
-item.thigh_leggings.name=Thigh Leggings
-item.thigh_boots.name=Thigh Boots
-item.thigh_sword.name=The Sword of Thicc Thighs
-item.thicc_thighs.name=Thicc Thighs
-item.thighs.name=Thighs
-item.uwu_thigh_sword.name=UwU Thicc Thigh Sword
 
 //blocks
 tile.debug_block.name=Debug Block
@@ -30,16 +8,14 @@ tile.justins_block.name=Justin's Block
 tile.iwi_ore.name=iwi Ore
 tile.corum_core.name=Corum Core
 tile.fusion_altar.name=Fusion Altar
+tile.incense_condenser.name=Incense Condenser
 
 //fluids
-fluid.fake_water=Fake Water
-fluid.fake_milk=Fake Milk
-fluid.fake_tears=Fake Tears
 
 //crops
-item.rice_bowl.name=Rice Bowl
 item.rice.name=Rice
 tile.rice_plant.name=Rice Plant
 
 //containers
 container.fusion_altar=Fusion Altar
+container.incense_condenser=Incense Condenser

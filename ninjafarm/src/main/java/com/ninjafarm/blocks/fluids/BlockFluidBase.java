@@ -1,4 +1,4 @@
-package com.antibed.blocks.fluids;
+package com.ninjafarm.blocks.fluids;
 
 import com.ninjafarm.init.ModBlocks;
 import com.ninjafarm.init.ModItems;
