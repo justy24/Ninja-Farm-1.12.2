@@ -2,6 +2,7 @@ package com.ninjafarm.items.ninjas;
 
 import com.Main;
 import com.ninjafarm.entity.flamy.EntityFlamy;
+import com.ninjafarm.entity.pebble.EntityPebble;
 import com.ninjafarm.init.ModItems;
 import com.ninjafarm.util.IHasModel;
 import com.ninjafarm.util.handlers.NinjaCountHandler;
@@ -11,15 +12,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
-import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 
-public class ItemFlamy extends Item implements IHasModel {
+public class ItemPebble extends Item implements IHasModel {
 
-    public ItemFlamy(String name){
+    public ItemPebble(String name){
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(CreativeTabs.DECORATIONS);
@@ -38,7 +37,7 @@ public class ItemFlamy extends Item implements IHasModel {
             NinjaCountHandler.registerPlayerNinjaCount(entityplayer);
             if(NinjaCountHandler.getNinjaCount(entityplayer) <= 5) {
                 ItemStack itemstack = entityplayer.getHeldItem(enumHand);
-                EntityFlamy entity = new EntityFlamy(world);
+                EntityPebble entity = new EntityPebble(world);
         /*entity.setNinjaHealth(1.0D);
         entity.setNinjaMovementSpeed(1.0D);*/
                 entity.setOwnerId(entityplayer.getUniqueID());

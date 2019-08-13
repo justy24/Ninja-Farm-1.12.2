@@ -6,5 +6,6 @@ import net.minecraft.world.storage.loot.LootTableList;
 
 public class LootTableHandler
 {
-    public static final ResourceLocation FLAMY = LootTableList.register(new ResourceLocation(Reference.MOD_ID, "centaur"));
+    public static final ResourceLocation FLAMY = LootTableList.register(new ResourceLocation(Reference.MOD_ID, "flamy"));
+    public static final ResourceLocation PEBBLE = LootTableList.register(new ResourceLocation(Reference.MOD_ID, "pebble"));
 }

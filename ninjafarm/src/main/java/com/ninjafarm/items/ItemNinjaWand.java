@@ -2,8 +2,10 @@ package com.ninjafarm.items;
 
 import com.Main;
 import com.ninjafarm.entity.flamy.EntityFlamy;
+import com.ninjafarm.entity.pebble.EntityPebble;
 import com.ninjafarm.init.ModItems;
 import com.ninjafarm.items.ninjas.ItemFlamy;
+import com.ninjafarm.util.handlers.NinjaCountHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
@@ -32,10 +34,20 @@ public class ItemNinjaWand extends Item {
 
     @Override
     public boolean itemInteractionForEntity(ItemStack itemStack, EntityPlayer player, EntityLivingBase target, EnumHand enumHand) {
-        if(target instanceof EntityFlamy) {
-            if(((EntityFlamy)target).getOwnerId() == player.getUniqueID()) {
-                target.setDead();
-                player.addItemStackToInventory(new ItemStack(ModItems.FLAMY));
+        if(!player.getEntityWorld().isRemote) {
+            if (target instanceof EntityFlamy) {
+                if (((EntityFlamy) target).getOwnerId() == player.getUniqueID()) {
+                    target.setDead();
+                    player.addItemStackToInventory(new ItemStack(ModItems.FLAMY));
+                    NinjaCountHandler.decreasePlayerNinjaCount(player);
+                }
+            }
+            if (target instanceof EntityPebble) {
+                if (((EntityPebble) target).getOwnerId() == player.getUniqueID()) {
+                    target.setDead();
+                    player.addItemStackToInventory(new ItemStack(ModItems.PEBBLE));
+                    NinjaCountHandler.decreasePlayerNinjaCount(player);
+                }
             }
         }
         return true;

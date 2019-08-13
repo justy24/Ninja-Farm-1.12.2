@@ -3,22 +3,22 @@
 
   "pattern":
   [
-    "III",
-    "I I",
-    "III"
+    "EEE",
+    "E E",
+    "EEE"
   ],
 
   "key":
   {
-    "I":
+    "E":
     {
-      "item": "ab:iwi"
+      "item": "ab:ewe"
     }
   },
 
   "result":
   {
-    "item": "ab:ewe",
+    "item": "ab:awa",
     "count": 1
   }
 }

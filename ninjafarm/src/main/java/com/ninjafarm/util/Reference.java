@@ -12,4 +12,5 @@ public class Reference {
     public static final int GUI_INCENSE_CONDENSER = 1;
 
     public static final int ENTITY_FLAMY = 120;
+    public static final int ENTITY_PEBBLE = 240;
 }

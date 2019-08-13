@@ -2,6 +2,7 @@ package com.ninjafarm.blocks.crops;
 
 import com.ninjafarm.init.ModBlocks;
 import com.ninjafarm.init.ModItems;
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -39,7 +40,7 @@ public class BlockRicePlant extends BlockCrops {
         if(!worldIn.isRemote) {
             if(this.isMaxAge(state)) {
                 cropDrops(worldIn, pos);
-                worldIn.setBlockState(pos, this.withAge(0));
+                worldIn.setBlockToAir(pos);
                 return true;
             }
         }
@@ -47,20 +48,17 @@ public class BlockRicePlant extends BlockCrops {
     }
 
     public void cropDrops(World worldIn, BlockPos pos) {
-        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.RICE, 2)));
-        EntityCreeper creeper = new EntityCreeper(worldIn);
-        creeper.setLocationAndAngles(pos.getX(), pos.getY(), pos.getZ(), 0, 0);
-        worldIn.spawnEntity(creeper);
+        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.FLAMY, 1)));
     }
 
     @Override
     protected Item getSeed() {
-        return ModItems.RICE; //what is required to plant
+        return ModItems.FLAMY_SOUL; //what is required to plant
     }
 
     @Override
     protected Item getCrop() {
-        return ModItems.RICE; //what is dropped when grown
+        return ModItems.FLAMY; //what is dropped when grown
     }
 
     @Override

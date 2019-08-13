@@ -2,6 +2,8 @@ package com.ninjafarm.util.handlers;
 
 import com.ninjafarm.entity.flamy.EntityFlamy;
 import com.ninjafarm.entity.flamy.RenderFlamy;
+import com.ninjafarm.entity.pebble.EntityPebble;
+import com.ninjafarm.entity.pebble.RenderPebble;
 import com.ninjafarm.init.ModFluids;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -14,6 +16,12 @@ public class RenderHandler {
             @Override
             public Render<? super EntityFlamy> createRenderFor(RenderManager manager) {
                 return new RenderFlamy(manager);
+            }
+        });
+        RenderingRegistry.registerEntityRenderingHandler(EntityPebble.class, new IRenderFactory<EntityPebble>() {
+            @Override
+            public Render<? super EntityPebble> createRenderFor(RenderManager manager) {
+                return new RenderPebble(manager);
             }
         });
     }

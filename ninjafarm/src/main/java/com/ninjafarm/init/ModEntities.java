@@ -2,6 +2,7 @@ package com.ninjafarm.init;
 
 import com.Main;
 import com.ninjafarm.entity.flamy.EntityFlamy;
+import com.ninjafarm.entity.pebble.EntityPebble;
 import com.ninjafarm.util.Reference;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
@@ -10,6 +11,7 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 public class ModEntities {
     public static void registerEntities() {
         registerEntity("flamy", EntityFlamy.class, Reference.ENTITY_FLAMY, 50, 16777181, 2544047);
+        registerEntity("pebble", EntityPebble.class, Reference.ENTITY_PEBBLE, 50, 16777181, 2544047);
     }
 
     private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2) {
