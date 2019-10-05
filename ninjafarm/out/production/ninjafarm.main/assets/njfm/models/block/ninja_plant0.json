@@ -1,0 +1,53 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"north_ninja_arm": "njfm:blocks/north_ninja_arm",
+		"up_ninja_arm": "njfm:blocks/up_ninja_arm",
+		"west_ninja_arm": "njfm:blocks/west_ninja_arm",
+		"east_ninja_arm": "njfm:blocks/east_ninja_arm",
+		"particle": "njfm:blocks/north_ninja_arm"
+	},
+	"elements": [
+		{
+			"name": "Cube",
+			"from": [6, 0, 6],
+			"to": [10, 1, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 2, 8]},
+			"faces": {
+				"north": {"uv": [6, 0, 10, 1], "texture": "#north_ninja_arm"},
+				"east": {"uv": [6, 0, 10, 1], "texture": "#east_ninja_arm"},
+				"south": {"uv": [6, 0, 10, 1], "texture": "#north_ninja_arm"},
+				"west": {"uv": [6, 0, 10, 1], "texture": "#west_ninja_arm"},
+				"up": {"uv": [5, 7, 9, 11], "texture": "#up_ninja_arm"},
+				"down": {"uv": [0, 0, 4, 4], "texture": "#up_ninja_arm"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 315, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 315, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 45, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"head": {
+			"rotation": [0, 180, 0]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}

@@ -187,7 +187,7 @@ public class TileEntityIncenseCondenser extends TileEntity implements ITickable
                 if (block == Blocks.COAL_BLOCK) return 16000;
             }
 
-            if (item == ModItems.RICE) return 5;
+            if (item == ModItems.CHILL) return 5;
 
             return GameRegistry.getFuelValue(fuel);
         }

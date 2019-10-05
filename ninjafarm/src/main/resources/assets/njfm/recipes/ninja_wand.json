@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  S",
+    " W ",
+    "W  "
+  ],
+
+  "key":
+  {
+    "S":
+    {
+      "item": "njfm:shuriken"
+    },
+
+    "W":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "njfm:ninja_wand",
+    "count": 1
+  }
+}

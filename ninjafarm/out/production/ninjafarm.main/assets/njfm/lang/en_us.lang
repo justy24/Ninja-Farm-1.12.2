@@ -1,4 +1,15 @@
 //items
+item.ninja_wand.name=Ninja Wand
+item.debug_ninja_wand.name=Debug Ninja Wand
+item.shuriken.name=Shuriken
+
+//Ninja Items
+item.flamy.name=Flamy
+item.chill.name=Chill
+item.pebble.name=Pebble
+item.lite.name=Lite
+item.onyx.name=Onyx
+item.kyanite.name=Kyanite
 
 //blocks
 tile.debug_block.name=Debug Block
@@ -12,10 +23,22 @@ tile.incense_condenser.name=Incense Condenser
 
 //fluids
 
-//crops
-item.rice.name=Rice
-tile.rice_plant.name=Rice Plant
+//ninja souls
+item.flamy_soul.name=Flamy Soul
+item.pebble_soul.name=Pebble Soul
+
+//ninja plants
+tile.flamy_plant.name=Flamy Plant
+tile.pebble_plant.name=Pebble Plant
 
 //containers
 container.fusion_altar=Fusion Altar
 container.incense_condenser=Incense Condenser
+
+//creative tabs
+itemGroup.ninjatab=Ninja Tab
+
+//entities
+entity.flamy.name=Flamy
+entity.pebble.name=Pebble
+entity.flamy.name=Chill

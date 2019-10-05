@@ -1,16 +1,11 @@
 package com.ninjafarm.init;
 
+import com.Main;
 import com.ninjafarm.items.ItemBase;
+import com.ninjafarm.items.ItemDebugNinjaWand;
 import com.ninjafarm.items.ItemNinjaWand;
-import com.ninjafarm.items.armor.ArmorBase;
-import com.ninjafarm.items.crops.FoodBase;
-import com.ninjafarm.items.crops.ItemRice;
-import com.ninjafarm.items.ninjas.ItemFlamy;
-import com.ninjafarm.items.ninjas.ItemPebble;
-import com.ninjafarm.items.tools.ToolStaff;
-import com.ninjafarm.items.tools.ToolSword;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.inventory.EntityEquipmentSlot;
+import com.ninjafarm.items.crops.NinjaSoulBase;
+import com.ninjafarm.items.ItemNinjaBase;
 import net.minecraft.item.Item;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,13 +21,22 @@ public class ModItems {
     //armor
 
     //crops
-    public static final Item RICE = new ItemRice("rice", 0, 1, false);
-    public static final Item FLAMY_SOUL = new ItemRice("flamy_soul", 0, 0, false);
+    public static final Item FLAMY_SOUL = new NinjaSoulBase("flamy_soul", 0, 0, false);
+    public static final Item PEBBLE_SOUL = new NinjaSoulBase("pebble_soul", 0, 0, false);
+    public static final Item CHILL_SOUL = new NinjaSoulBase("chill_soul", 0, 0, false);
 
     //food
 
     //ninja items
     public static final Item NINJA_WAND = new ItemNinjaWand("ninja_wand");
-    public static final Item FLAMY = new ItemFlamy("flamy");
-    public static final Item PEBBLE = new ItemPebble("pebble");
+    public static final Item DEBUG_NINJA_WAND = new ItemDebugNinjaWand("debug_ninja_wand");
+    public static final Item SHURIKEN = new ItemBase("shuriken", Main.NINJATAB);
+
+    //ninja souls
+    public static final Item FLAMY = new ItemNinjaBase("flamy");
+    public static final Item CHILL = new ItemNinjaBase("chill");
+    public static final Item PEBBLE = new ItemNinjaBase("pebble");
+    public static final Item LITE = new ItemNinjaBase("lite");
+    public static final Item ONYX = new ItemNinjaBase("onyx");
+    public static final Item KYANITE = new ItemNinjaBase("kyanite");
 }

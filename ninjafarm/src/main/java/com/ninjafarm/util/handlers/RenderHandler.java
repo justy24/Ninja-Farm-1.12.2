@@ -1,5 +1,7 @@
 package com.ninjafarm.util.handlers;
 
+import com.ninjafarm.entity.chill.EntityChill;
+import com.ninjafarm.entity.chill.RenderChill;
 import com.ninjafarm.entity.flamy.EntityFlamy;
 import com.ninjafarm.entity.flamy.RenderFlamy;
 import com.ninjafarm.entity.pebble.EntityPebble;
@@ -22,6 +24,12 @@ public class RenderHandler {
             @Override
             public Render<? super EntityPebble> createRenderFor(RenderManager manager) {
                 return new RenderPebble(manager);
+            }
+        });
+        RenderingRegistry.registerEntityRenderingHandler(EntityChill.class, new IRenderFactory<EntityChill>() {
+            @Override
+            public Render<? super EntityChill> createRenderFor(RenderManager manager) {
+                return new RenderChill(manager);
             }
         });
     }
