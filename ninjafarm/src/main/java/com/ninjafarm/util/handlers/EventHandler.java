@@ -20,12 +20,12 @@ public class EventHandler {
         if(event.getGui() instanceof GuiInventory) event.setGui(new GuiUpdatedInventory(Minecraft.getMinecraft().player));
     }
 
-    @SubscribeEvent
+    /*@SubscribeEvent
     public void onPlayerRespawn(PlayerEvent.PlayerRespawnEvent event) {
         EntityPlayer player = event.player;
         INinjaCount ninjaCount = player.getCapability(NinjaCountProvider.NINJA_COUNT, null);
         INinjaCount oldNinjaCount = player.getCapability(NinjaCountProvider.NINJA_COUNT, null);
 
         ninjaCount.setNinjaCount(ninjaCount.getNinjaCount());
-    }
+    }*/
 }
