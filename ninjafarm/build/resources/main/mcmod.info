@@ -1,13 +1,13 @@
 [
 {
-  "modid": "ab",
-  "name": "Anti Bed",
-  "description": "A mod to allow for sleeping at day",
+  "modid": "njfm",
+  "name": "Ninja Farm",
+  "description": "A mod to fill the whole that the Ninja Farm app left in our hearts.",
   "version": "0.1",
   "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",
-  "authorList": ["bagofmandms","justy24","martini"],
+  "authorList": ["justy24"],
   "credits": "",
   "logoFile": "",
   "screenshots": [],
